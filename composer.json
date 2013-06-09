@@ -4,6 +4,7 @@
     "keywords": ["blog","theming","admin"],
     "homepage": "http://github.com/tabernicola/blog",
     "type": "symfony-bundle",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Tabernicola",

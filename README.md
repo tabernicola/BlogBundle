@@ -18,5 +18,19 @@ Add tabernicola's blog to your `composer.json`:
 },
 ```
 
+you need also have the root key:
+
+"minimum-stability": "alpha",
+
 Then run `php composer.phar update` command.
+
+###  Add to your AppKernel.php
+
+    new Tabernicola\BlogBundle(),
+    
+###3)  Add to routing.yml
+
+    tabernicola_blog:
+        resource: "@TabernicolaBlogBundle/Resources/config/routing.yml"
+        prefix:   /
 
