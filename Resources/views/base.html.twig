@@ -1,0 +1,272 @@
+{% extends "::base.html.twig" %}
+{% block title %}Blog{% endblock %}
+
+{% block metas %}
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+{% endblock %}
+
+
+{% block stylesheets %}
+<link rel="stylesheet" href="/wp-content/themes/cinematic/style.css" type="text/css" media="screen" />
+{% endblock %}
+
+{% block header_feeds %}
+<link rel="alternate" type="application/rss+xml" title="Versioneando RSS Feed" href="http://versioneando.com/feed/" />
+<link rel="alternate" type="application/atom+xml" title="Versioneando Atom Feed" href="http://versioneando.com/feed/atom/" />
+{% endblock %}
+
+{% block javascripts %}
+<script type="text/javascript" src="/wp-content/themes/cinematic/js/jquery-1.2.6-packed.js"></script>
+<script type="text/javascript" src="/wp-content/themes/cinematic/js/slider.js"></script>
+<script type="text/javascript" src="/wp-content/themes/cinematic/js/slide.noconflict.js"></script>
+{% endblock %}
+
+{% block body %}
+    <div id="mainwrap">
+        {% block header %}
+        <div id="header">
+            <div id="headerr">
+                <div id="blogtitle">
+                    <h1><a id="heading" href="/">Versioneando</a></h1>
+                    <div class="description">Las mejores  versiones de la red</div>
+                </div>
+                <div id="top">
+                    <ul id="nav">
+                        <li class="page_item current_page_item"><a href="/">Home</a></li>
+                        <li class="page_item page-item-2"><a href="/ultimas-versiones/">Ultimas versiones</a></li>
+                        <li class="page_item page-item-20"><a href="/mas-vistos/">Más vistos</a></li>
+                        <li class="page_item page-item-23"><a href="/contacto/">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        {% endblock %}
+        {% block up_content %}
+        <div id="upcontent">
+            <div class="upscroll">
+                <div class="scrollbot">
+                    <div id="featured-video">
+                        <div class="padd">
+                            <h2>Irunea 6 de Julio</h2><iframe width="310" height="189" src="http://tu.tv/iframe/2711217/" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        stepcarousel.setup({
+                            galleryid: 'mygallery', //id of carousel DIV
+                            beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+                            panelclass: 'panel', //class of panel DIVs each holding content
+                            panelbehavior: {speed:500, wraparound:true, persist:true},
+                            defaultbuttons: {enable: true, moveby: 1, leftnav: ['/wp-content/themes/cinematic/images/left.gif', 300, 202], rightnav: ['/wp-content/themes/cinematic/images/right.gif', -35, 202]},
+                            statusvars: ['statusA', 'statusB', 'statusC'], //register 3 variables that contain current panel (start), current panel (last), and total panels
+                            contenttype: ['external'] //content setting ['inline'] or ['external', 'path_to_external_file']
+                        })
+                    </script>
+                    <div id="mygallery" class="stepcarousel">
+                        <div class="belt">
+                            <div class="panel">
+                                <div class="slideimg">
+                                    <a href="/bienvenido-a-versioneando-com/" title="Bienvenido a Versioneando.com" > 
+                                      <img src="/images/v/thumbs/001/1_.jpg" width="290" height="200" alt="Bienvenido a Versioneando.com"/>
+                                    </a>
+                                </div>
+                                <h2>
+                                    <a href="/bienvenido-a-versioneando-com/" rel="bookmark" title="Permanent Link to Bienvenido a Versioneando.com">Bienvenido a Versioneando.com</a>
+                                </h2>
+                                <div class="slideex">
+                                    <p>Versioneando.com es una web que recogerá versiones de todo tipo de  canciones. No intenta ser la mayor base de datos de versiones, porque para eso ya existen otras webs extranjeras, sino sobretodo descubrir  esas canciones que piensas que son originales de un grupo y en verdad son de otro, como por ejemplo, el &#8220;My way&#8221; [...]</p>
+                                    <p><a class="more" href="/bienvenido-a-versioneando-com/" title="Permanent Link to Bienvenido a Versioneando.com">Leer más</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endblock %}
+        {% block sidebar %}    
+        <div id="sidebar">
+            <div class="sscroll">
+                <div class="stop">
+                    <div class="addthis_toolbox">
+                <div class="custom_images">
+                    <a class="addthis_button_twitter"><img src="/wp-content/themes/cinematic/images/socialicons/twitter.png" width="32" height="32" alt="Twitter" /></a>
+                    <a class="addthis_button_delicious"><img src="/wp-content/themes/cinematic/images/socialicons/delicious.png" width="32" height="32" alt="Delicious" /></a>
+                    <a class="addthis_button_facebook"><img src="/wp-content/themes/cinematic/images/socialicons/facebook.png" width="32" height="32" alt="Facebook" /></a>
+                    <a class="addthis_button_digg"><img src="/wp-content/themes/cinematic/images/socialicons/digg.png" width="32" height="32" alt="Digg" /></a>
+                    <a class="addthis_button_stumbleupon"><img src="/wp-content/themes/cinematic/images/socialicons/stumbleupon.png" width="32" height="32" alt="Stumbleupon" /></a>
+                    <a class="addthis_button_favorites"><img src="/wp-content/themes/cinematic/images/socialicons/favorites.png" width="32" height="32" alt="Favorites" /></a>
+                    <a class="addthis_button_more"><img src="/wp-content/themes/cinematic/images/socialicons/more.png" width="32" height="32" alt="More" /></a>
+                </div>
+            <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa-4a65e1d93cd75e94"></script>
+            </div>
+                    <div class="side-widget SearchSidebarWidget">
+                        <h3>Buscador</h3>
+                        <script type="text/javascript" >
+                            function toggle_sidebar(){
+                        style = document.getElementById('searchform_advanced_bar').style.display;
+                        if (style == 'block') 
+                        {
+                                document.getElementById('searchform_advanced_bar').style.display = 'none';
+                                document.getElementById('searchform_advanced_bar').innerHTML = '';
+                        }
+                        else 
+                        {
+                                document.getElementById('searchform_advanced_bar').style.display = 'block';
+                                document.getElementById('searchform_advanced_bar').innerHTML = document.getElementById('searchform_advanced_options_bar').innerHTML;
+                        }
+                }
+                        </script>
+                        <style>
+                #searchbar ul li,
+                #searchbar ul li:hover{
+                    margin-left: 0px;
+                    background-image: none;
+                }
+
+                ul.page-numbers li
+                {
+                display: inline;
+                list-style-type: none;
+                padding-right: 5px;
+                }
+                </style>
+                        <div id="searchbar">
+                <form id="searchform" method="get" action="">
+                    <ul>
+                        <li>
+                            <input type="text" name="s" id="sbar" size="15"
+                                   value=""/>
+                            <input type="submit" id="submit" value="Search" />
+                            <a href="javascript:void(0);" onclick="toggle_sidebar();"
+                               style="font-size:10px;">Options</a>
+                        </li>
+                    </ul>
+
+                    <div id="searchform_advanced_bar" style="display:none;"></div>
+                </form>
+
+                <div id="searchform_advanced_options_bar" style="display:none;">
+                    <ul>
+                        <li style="display:none" id="searchin">Search in:                <br/>
+                            <input type="checkbox" id="search_posts" name="search_posts" value="true"
+                            checked='checked' /><label for="search_posts">posts</label>
+                            <br/>
+                            <input type="checkbox" id="search_pages" name="search_pages" value="true"
+                            checked='checked' /><label for="search_pages">pages</label>
+                            <br/>
+                            <input type="checkbox" id="search_comments" name="search_comments" value="true"
+                            checked='checked' /><label for="search_comments">comments</label>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li id="sortby">Ordenar por:                <br/>
+                            <input type="radio" id="search_sortby_date_relevance" name="search_sortby" value="date_relevance"
+                            checked="true" /><label for="search_sortby_date_relevance">Fecha &amp; Relevancia</label>
+                            <br/>
+                            <input type="radio" id="search_sortby_rel" name="search_sortby" value="relevance"
+                             /><label for="search_sortby_rel">Relevancia</label>
+                            <br/>
+                            <input type="radio" id="search_sortby_date" name="search_sortby" value="date"
+                             /><label for="search_sortby_date">Fecha</label>                
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                    </div>
+                    <div class="side-widget allvideogallery">
+                        <h3>Ultimas versiones</h3>
+                        <style type="text/css">
+                            #avs_widget_gallery .avs_thumb {border-bottom:1px solid #E7E7E7;margin:0px;padding:7px;float:left;width:99%;}
+                            #avs_widget_gallery a {text-decoration:none;}
+                            #avs_widget_gallery .avs_thumb:hover {background-color:#F1F1F1;}
+                            #avs_widget_gallery .avs_thumb .left {float:left;}
+                            #avs_widget_gallery .avs_thumb .right {width:100px;margin-left:5px;float:left;}
+                            #avs_widget_gallery .avs_thumb .arrow {position:absolute;opacity:0.5;filter:alpha(opacity=50);}
+                            #avs_widget_gallery .avs_thumb .title {display:block;font-size:12px;color:#444;}
+                            #avs_widget_gallery .avs_thumb .hits {display:block;font-size:10px;color:#777;}
+                            #avs_widget_gallery .more {border-bottom:1px solid #E7E7E7;	padding:7px;width:99%;text-align:center;}
+                            #avs_widget_gallery .more a {width:32px;}
+                        </style>
+                        <div id="avs_widget_gallery">
+                            <div class="avs_thumb">
+                                <a href="/indice/sutura/suenos-podridos/txuri-urdin-punk">
+                                    <div class="left" style="width:75px; height:50px;">
+                                        <img class="arrow" src="/wp-content/plugins/all-video-gallery/assets/play.gif" style="margin-left:22.5px; margin-top:12px" border="0" />
+                                        <img class="image" src="/images/v/thumbs/033/33_txuri-urdin-punk.jpg" width="75" height="50" title="Txuri urdin (punk)" border="0" />
+                                    </div>
+                                    <div class="right">
+                                        <span class="title">Txuri urdin (punk)</span>
+                                        <span class="hits"><strong>No. of Hits : </strong>4</span></div></a></div><div style="clear:both"></div><div class="avs_thumb"><a href="/indice/piperrak/los-muertos-de-siempre/autosuficiencia_1"><div class="left" style="width:75px; height:50px;"><img class="arrow" src="/wp-content/plugins/all-video-gallery/assets/play.gif" style="margin-left:22.5px; margin-top:12px" border="0" /><img class="image" src="/images/v/thumbs/031/31_autosuficiencia_1.jpg" width="75" height="50" title="Autosuficiencia" border="0" /></div><div class="right"><span class="title">Autosuficiencia</span><span class="hits"><strong>No. of Hits : </strong>3</span></div></a></div><div style="clear:both"></div><div class="avs_thumb"><a href="/indice/nigel-kennedy/the-doors-concerto/the-end-symphonic-version"><div class="left" style="width:75px; height:50px;"><img class="arrow" src="/wp-content/plugins/all-video-gallery/assets/play.gif" style="margin-left:22.5px; margin-top:12px" border="0" /><img class="image" src="/images/v/thumbs/029/29_the-end-symphonic-version.jpg" width="75" height="50" title="The End - Symphonic version" border="0" /></div><div class="right"><span class="title">The End - Symphonic version</span><span class="hits"><strong>No. of Hits : </strong>2</span></div></a></div><div style="clear:both"></div><div class="more"><a href="/ultimas-versiones/">más...</a>
+                                        </div></div></div>		<div class="side-widget widget_recent_entries">		<h3>Ultimas noticias</h3>		<ul>
+                            <li>
+                                <a href="/real-sociedad-a-por-la-champions/" title="Real Sociedad, a por la champions">Real Sociedad, a por la champions</a>
+                            </li>
+                            <li>
+                                <a href="/homenaje-a-the-doors/" title="Homenaje a The Doors">Homenaje a The Doors</a>
+                            </li>
+                            <li>
+                                <a href="/primera-colaboracion/" title="Primera colaboración">Primera colaboración</a>
+                            </li>
+                            <li>
+                                <a href="/bienvenido-a-versioneando-com/" title="Bienvenido a Versioneando.com">Bienvenido a Versioneando.com</a>
+                            </li>
+                        </ul>
+                            </div></div>
+            </div>
+            </div>
+        {% endblock %}
+        {% block content %}
+        <div id="contentwrap">
+            <div class="inside">
+                {% block post %}
+                <div class="post type-post status-publish format-standard hentry category-blog" id="post-49">
+                            <h2><a href="/real-sociedad-a-por-la-champions/" rel="bookmark" title="Permanent Link to Real Sociedad, a por la champions">Real Sociedad, a por la champions</a></h2>
+                            <div class="pwrap">
+                            <div class="bwrap">
+                                            <div class="entry">
+                                                    <p>En estos días en los que mi equipo del alma, la Real Sociedad, se esta jugando una plaza de la champions con el Valencia, que menos que darles todo el apoyo posible. Así que para darles fuerza he añadido esta versión del himno &#8220;txuri  urdin&#8221; que hizo el grupo de un buen amigo, Sutura. Y como una vez le oí comentar a Javi De Pedro en una entrevista, &#8220;El himno del Athletic es bonito, pero oigo el himno de la Real y se me ponen los pelos de punta</p>
+            <p><iframe width="310" height="189" src="http://tu.tv/iframe/2736049/" frameborder="0" scrolling="no" allowfullscreen></iframe><iframe width="310" height="189" src="http://tu.tv/iframe/2736050/" frameborder="0" scrolling="no" allowfullscreen></iframe></p>
+            <p>GORA ERREALA!!!!!!</p>
+            <p>&nbsp;</p>
+                                            </div>
+                            <div class="meta">
+                            <span class="date">25th  May, 2013</span>
+                            <span class="author">Posted by tabernicola</span>
+                            <span class="edit"><a class="post-edit-link" href="/wp-admin/post.php?post=49&amp;action=edit" title="Edit Post">Edit</a></span>
+                            <div class="clear"></div>
+                            <span class="cat">Posted in <a href="/category/blog/" title="View all posts in Blog" rel="category tag">Blog</a></span>
+                            <span class="comm"><a href="/real-sociedad-a-por-la-champions/#respond" title="Comment on Real Sociedad, a por la champions">No Comments &#187;</a></span>
+                            </div>
+
+                                    </div>
+                                    </div>
+                                    </div>
+                {% endblock %}
+                <div class="navigation"></div>
+            </div>
+        </div>
+        {% endblock %}
+        <div style="clear: both;"></div>
+
+        {% block footer %}
+        <div id="footer">
+            Copyright &copy; 2013 <a href="">Versioneando</a>. 
+            All Rights Reserved. 
+        </div>
+        {% endblock %}
+    </div>
+    {% block tracking %}    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-39763142-1', 'versioneando.com');
+      ga('send', 'pageview');
+
+    </script>
+    {% endblock %}
+{% endblock %}

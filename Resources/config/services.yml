@@ -1,0 +1,7 @@
+parameters:
+#    tabernicola_blog.example.class: Tabernicola\BlogBundle\Example
+
+services:
+#    tabernicola_blog.example:
+#        class: %tabernicola_blog.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
