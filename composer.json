@@ -23,9 +23,7 @@
             "Tabernicola\\BlogBundle": ""
         }
     },
-        "branch-alias": {
-            "dev-master": "2.3-dev"
-        }
+    "branch-alias": {
+        "dev-master": "2.3-dev"
     }
-    
 }
