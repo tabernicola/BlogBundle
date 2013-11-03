@@ -16,7 +16,8 @@
         "symfony/symfony": "2.3.*",
         "cedriclombardot/admingenerator-generator-bundle": "dev-master",
         "liip/imagine-bundle": "*",
-        "liip/theme-bundle": "*"
+        "liip/theme-bundle": "*",
+	"stof/doctrine-extensions-bundle": "~1.1@dev",
     },
     "target-dir": "Tabernicola/BlogBundle",
     "autoload": {
