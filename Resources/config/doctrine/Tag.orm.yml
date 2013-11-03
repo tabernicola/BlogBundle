@@ -1,0 +1,28 @@
+Tabernicola\BlogBundle\Entity\Tag:
+    type: entity
+    table: BlogTag
+    repositoryClass: Tabernicola\BlogBundle\Entity\TagRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        name:
+            type: string
+            length: '80'
+        slug:
+            type: string
+            length: '80'
+            gedmo:
+              slug:
+                separator: _
+                style: normal
+                fields:
+                  - name
+        updatedAt:
+            type: datetime
+            gedmo:
+              timestampable:
+                on: update
+    lifecycleCallbacks: {  }
