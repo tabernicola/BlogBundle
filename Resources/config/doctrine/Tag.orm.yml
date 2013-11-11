@@ -25,4 +25,12 @@ Tabernicola\BlogBundle\Entity\Tag:
             gedmo:
               timestampable:
                 on: update
+    manyToOne:
+      post:
+        targetEntity:   Tabernicola\BlogBundle\Entity\Post
+        inversedBy:     tags
+        cascade:        [ persist ]
+        joinColumn:
+          nullable:     false
+          onDelete:     cascade
     lifecycleCallbacks: {  }

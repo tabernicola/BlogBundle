@@ -192,4 +192,32 @@ class Post
     {
         return $this->slug;
     }
+    /**
+     * @var \Tabernicola\BlogBundle\Model\IUser
+     */
+    private $user;
+
+
+    /**
+     * Set user
+     *
+     * @param \Tabernicola\BlogBundle\Model\IUser $user
+     * @return Post
+     */
+    public function setUser(\Tabernicola\BlogBundle\Model\IUser $user)
+    {
+        $this->user = $user;
+    
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \Tabernicola\BlogBundle\Model\IUser 
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
 }

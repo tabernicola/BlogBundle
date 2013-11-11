@@ -34,4 +34,16 @@ Tabernicola\BlogBundle\Entity\Post:
                 on: update
         state:
             type: smallint
+    manyToOne:
+      user:
+        targetEntity:   Tabernicola\BlogBundle\Model\IUser
+        inversedBy:     posts
+        cascade:        [ persist ]
+        joinColumn:
+          nullable:     false
+          onDelete:     cascade
+    oneToMany:
+      tags:
+        targetEntity:   Tabernicola\BlogBundle\Entity\Tag
+        mappedBy:       post
     lifecycleCallbacks: {  }

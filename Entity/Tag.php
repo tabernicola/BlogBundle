@@ -108,4 +108,32 @@ class Tag
     {
         return $this->updatedAt;
     }
+    /**
+     * @var \Tabernicola\BlogBundle\Entity\Post
+     */
+    private $post;
+
+
+    /**
+     * Set post
+     *
+     * @param \Tabernicola\BlogBundle\Entity\Post $post
+     * @return Tag
+     */
+    public function setPost(\Tabernicola\BlogBundle\Entity\Post $post)
+    {
+        $this->post = $post;
+    
+        return $this;
+    }
+
+    /**
+     * Get post
+     *
+     * @return \Tabernicola\BlogBundle\Entity\Post 
+     */
+    public function getPost()
+    {
+        return $this->post;
+    }
 }
